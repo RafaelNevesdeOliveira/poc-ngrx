@@ -1,0 +1,14 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+
+  .button{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 12px;
+  }
+}
