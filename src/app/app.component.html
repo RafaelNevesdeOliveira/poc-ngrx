@@ -1,7 +1,8 @@
 <div class="wrapper">
-  <app-display-counter [counter]="counter"></app-display-counter>
+  <h1>{{ counter$ | async }}</h1>
+  <app-display-counter></app-display-counter>
   <div class="button">
-    <button (click)="counter = counter + 1">Incrementar</button>
-    <button (click)="counter = counter - 1">Decrementar</button>
+    <button (click)="incrementaContador()">Incrementar</button>
+    <button (click)="decrementaContador()">Decrementar</button>
   </div>
 </div>
